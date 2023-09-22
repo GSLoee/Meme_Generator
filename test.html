@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=Cookie&family=Kalam&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Meme Generator</h1>
+    <br>
+    <div class="url">
+        <p class="input-text">input url</p> 
+                <input class="url-input" type="url">
+        
+    </div>
+    <div class="top-bottom">
+        <div class="top">
+            <!-- <p class="top-text">Top Text</p>  -->
+                <input class="top-input" type="text" placeholder="Top Text">
+        </div>
+        <div class="bottom">
+            <!-- <p class="bottom-text">Bottom Text</p>  -->
+                <input class="bottom-input" type="text" placeholder="Bottom Text">
+        </div>
+        <div class="submit-div">
+            <input class="generate" type="Submit" value="Generate Meme">
+            
+        </div>
+        <div class="clear-button">
+            <input class="clear" type="button" value="Clear" onclick="refreshPage()">
+        </div>
+    </div>
+    
+    <div class="meme-div"></div>
+
+    <div class="canvas-div">
+        <canvas class="canvas"></canvas>
+        <canvas class="canvas-2"></canvas>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
